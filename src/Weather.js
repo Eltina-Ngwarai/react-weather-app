@@ -69,7 +69,7 @@ console.log(response);
 
 } else {
   const apiKey ="45d862b440fa3dtc36ab8b0be0f20o60";
-  let apiUrl= `https://api.shecodes.io/weather/v1/current?query=Hamburg&key=45d862b440fa3dtc36ab8b0be0f20o60&units=metric`;
+  let apiUrl= `https://api.shecodes.io/weather/v1/current?query=Hamburg&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse);
   return "Loading..."
