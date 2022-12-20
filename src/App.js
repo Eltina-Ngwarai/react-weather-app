@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container">
        
-        <Weather />
+        <Weather defaultCity="Harare"/>
         <footer>
       <a
         href="https://github.com/elty-annie/vanilla-weather-app"
