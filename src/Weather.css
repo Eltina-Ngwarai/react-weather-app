@@ -34,7 +34,7 @@
 .Weather img{
     height: 100px;
     width: 100px;
-    margin-right: 10px;
+    margin-right: 1px;
     display: inline-block;
 }
 .Weather .unit{
@@ -50,4 +50,6 @@
 .Weather .temperatureContainer {
     display: inline-block;
     height: 100%;
+    
+
 }
