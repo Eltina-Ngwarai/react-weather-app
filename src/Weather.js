@@ -10,18 +10,18 @@ export default function Weather(props) {
     console.log(response);
     setWeatherData({
       ready: true,
-      temperature: response.data.temperature.current,
-      humidity: response.data.temperature.humidity,
-      date: new Date(response.data.time * 1000),
-      description: response.data.condition.description,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      date: new Date(response.data.dt * 1000),
+      description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      city: response.data.city,
-      icon: response.data.condition.icon_url,
+      city: response.data.name,
+      icon: response.data.weather[0].icon,
     });
   }
   function search() {
-    const apiKey = "45d862b440fa3dtc36ab8b0be0f20o60";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    const apiKey = "3b8d76c091f9d7d7d225014f6e4a3bc1";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     axios.get(apiUrl).then(handleResponse);
   }
@@ -43,6 +43,7 @@ export default function Weather(props) {
                 type="search"
                 placeholder="Enter a city.."
                 className="form-control"
+                autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
