@@ -4,12 +4,16 @@
     padding: 16px;
     border-radius: 4px;
     color: rgb(135, 135, 135);
+
 }
 .Weather h1 {
     font-size: 24px;
     font-weight: 100;
     margin: 20px 0 0 0;
     line-height: 29px;
+}
+.Weather .btn{
+    background: black;
 }
 .Weather ul{
     margin: 0;
@@ -29,10 +33,10 @@
     line-height: 64px;
     margin-left: 5px;
     margin-left: 10px;
+    
 }
 .Weather canvas{
-   
-    margin: 10px auto;
+    margin: 2px auto;
 }
 .Weather .unit{
     color: rgb(33, 33, 33);
@@ -45,4 +49,5 @@
 
 .Weather .temperatureContainer {
     display: inline-block;
+    margin-bottom: 18px;
 }
