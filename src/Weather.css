@@ -4,6 +4,7 @@
     padding: 16px;
     border-radius: 4px;
     color: rgb(135, 135, 135);
+    background: rgb(245, 235, 255);
 
 }
 .Weather h1 {
@@ -11,9 +12,11 @@
     font-weight: 100;
     margin: 20px 0 0 0;
     line-height: 29px;
+    color: black;
 }
 .Weather .btn{
-    background: black;
+    background: rgb(130, 118, 226);
+    border-color: rgb(130, 118, 226);
 }
 .Weather ul{
     margin: 0;
